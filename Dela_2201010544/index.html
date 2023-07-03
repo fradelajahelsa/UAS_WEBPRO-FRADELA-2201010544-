@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pemesanan Tiket Kapal</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+      .confirmation-message {
+        display: none;
+        text-align: center;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      .confirmation-message h2 {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pemesanan Tiket Kapal</h1>
+
+    <form id="pemesananform">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br />
+
+      <label for="tgl_berangkat">tgl_berangkat :</label>
+      <input type="number" id="tgl_berangkat" name="tgl_berangkat" required /><br />
+
+      <label for="jam_berangkat">jam_berangkat :</label>
+      <input type="number" id="jam_berangkat" name="jam_berangkat" required /><br />
+
+      <label for="no_ktp">no_ktp:</label>
+      <input type="number" id="no_ktp" name="no_ktp" required /><br />
+
+      <label for="pelabuhan_asal">pelabuhan_asal:</label>
+      <input type="text" id="pelabuhan_asal" name="pelabuhan_asal" required /><br />
+
+      <label for="pelabuhan_tujuan">pelabuhan_tujuan:</label>
+      <input type="text" id="pelabuhan_tujuan" name="pelabuhan_tujuan" required /><br />
+
+      <label for="no_tiket">no_tiket:</label>
+      <input type="number" id="no_tiket" name="no_tiket" required /><br />
+
+      <input type="submit" value="pesan" />
+    </form>
+
+    <div id="confirmationMessage" class="confirmation-message">
+      <h2>pemesanan Successful!</h2>
+      <p>Thank you for booking a ticket Boat.</p>
+    </div>
+  </body>
+</html>
